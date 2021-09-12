@@ -11,15 +11,15 @@ const Navbar = () => {
 	const [nav, setNav] = useState(false);
 
 	return (
-		<div className={'footer'}>
-			<div className={'footer__switch'} onClick={() => setNav(!nav)}>
+		<div className={'navbar'}>
+			<div className={'navbar__switch'}>
 				{nav ? (
-					<RiArrowUpSLine className={'icons'} />
+					<RiArrowUpSLine className={'icons'} onClick={() => setNav(!nav)} />
 				) : (
-					<RiArrowDownSLine className={'icons'} />
+					<RiArrowDownSLine className={'icons'} onClick={() => setNav(!nav)} />
 				)}
 			</div>
-			<div className={`footer__content ${nav ? 'active' : ''}`}>
+			<div className={`navbar__content ${nav ? 'active' : ''}`}>
 				<a href={'https://github.com/SamooMei'}>
 					<RiGithubLine className={'icons'} />
 				</a>
