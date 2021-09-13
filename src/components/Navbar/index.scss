@@ -1,6 +1,7 @@
 .navbar {
 	position: fixed;
 	right: 10px;
+	z-index: 1;
 
 	&__switch {
 		display: flex;
