@@ -8,8 +8,13 @@
 	src: url(./fonts/JetBrains.ttf);
 }
 
+:root {
+	color-scheme: dark;
+}
+
 body {
-  background-color: #191414;
-  font-family: 'Nunito';
-  color: white;
+	background-color: hsl(200, 5%, 20%);
+	font-family: 'Nunito';
+	color: white;
+	height: 100vw;
 }
