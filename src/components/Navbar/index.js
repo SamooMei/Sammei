@@ -22,18 +22,33 @@ const Navbar = () => {
 				)}
 			</div>
 			<div className={`navbar__content ${nav ? 'active' : ''}`}>
-				<a href={'/'}>
-					<RiHomeHeartLine className={'icons'} />
-				</a>
-				<a href={'/Projects'}>
-					<RiBriefcase3Line className={'icons'} />
-				</a>
-				<a href={'https://github.com/SamooMei'}>
-					<RiGithubLine className={'icons'} />
-				</a>
-				<a href={'https://linkedin.com/in/samuelmei/'}>
-					<RiLinkedinLine className={'icons'} />
-				</a>
+				<div className={'navbar__content__ref'}>
+					<div className={'names'}>Home</div>
+					<a href={'/'}>
+						<RiHomeHeartLine className={'icons'} />
+					</a>
+				</div>
+
+				<div className={'navbar__content__ref'}>
+					<div className={'names'}>Projects</div>
+					<a href={'/Projects'}>
+						<RiBriefcase3Line className={'icons'} />
+					</a>
+				</div>
+
+				<div className={'navbar__content__ref'}>
+					<div className={'names'}>Github</div>
+					<a href={'https://github.com/SamooMei'}>
+						<RiGithubLine className={'icons'} />
+					</a>
+				</div>
+
+				<div className={'navbar__content__ref'}>
+					<div className={'names'}>LinkedIn</div>
+					<a href={'https://linkedin.com/in/samuelmei/'}>
+						<RiLinkedinLine className={'icons'} />
+					</a>
+				</div>
 			</div>
 		</div>
 	);

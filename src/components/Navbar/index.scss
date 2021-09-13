@@ -1,26 +1,52 @@
 .navbar {
-  position: fixed;
-  right: 10px;
-  z-index: 1;
+	position: fixed;
+	right: 10px;
+	z-index: 1;
 
-  &__switch {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+	display: flex;
+	flex-direction: column;
+
+	&__switch {
+		display: flex;
+		flex-direction: column;
+		align-self: flex-end;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+    justify-content: space-around;
+    height: 170px;
+
+		&__ref {
+			display: flex;
+			justify-content: space-between;
+			width: 100px;
+			height: 30px;
+		}
+	}
+
+	& .names {
+		text-align: center;
+		vertical-align: middle;
+		line-height: 30px;
+	}
+
+	& .icons {
+		font-size: 30px;
+		color: white;
+	}
+
+	& .active {
+		display: none;
+	}
+
+  .home {
+    visibility: hidden;
   }
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  & .icons {
-    font-size: 30px;
-    color: white;
-  }
-
-  & .active {
-    display: none;
+  .homeico:hover .home {
+    visibility: visible;
   }
 }
