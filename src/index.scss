@@ -1,20 +1,22 @@
 @font-face {
-  font-family: "Nunito";
-  src: url(./fonts/Nunito.ttf);
+	font-family: 'Nunito';
+	src: url(./fonts/Nunito.ttf);
 }
 
 @font-face {
-  font-family: "JetBrains";
-  src: url(./fonts/JetBrains.ttf);
+	font-family: 'JetBrains';
+	src: url(./fonts/JetBrains.ttf);
 }
 
 :root {
-  color-scheme: dark;
+	color-scheme: dark;
 }
 
 body {
-  background-color: hsl(200, 5%, 20%);
-  font-family: "Nunito";
-  color: white;
-  height: 100vh;
+	background-color: hsl(200, 5%, 20%);
+	font-family: 'Nunito';
+	color: white;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 }
