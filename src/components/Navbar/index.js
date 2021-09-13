@@ -23,31 +23,31 @@ const Navbar = () => {
 			</div>
 			<div className={`navbar__content ${nav ? 'active' : ''}`}>
 				<div className={'navbar__content__ref'}>
-					<div className={'names'}>Home</div>
-					<a href={'/'}>
+					<a href={'/'} className={'home'}>
 						<RiHomeHeartLine className={'icons'} />
 					</a>
+					<div className={'names home_'}>Home</div>
 				</div>
 
 				<div className={'navbar__content__ref'}>
-					<div className={'names'}>Projects</div>
-					<a href={'/Projects'}>
+					<a href={'/Projects'} className={'projects'}>
 						<RiBriefcase3Line className={'icons'} />
 					</a>
+					<div className={'names projects_'}>Projects</div>
 				</div>
 
 				<div className={'navbar__content__ref'}>
-					<div className={'names'}>Github</div>
-					<a href={'https://github.com/SamooMei'}>
+					<a href={'https://github.com/SamooMei'} className={'github'}>
 						<RiGithubLine className={'icons'} />
 					</a>
+					<div className={'names github_'}>Github</div>
 				</div>
 
 				<div className={'navbar__content__ref'}>
-					<div className={'names'}>LinkedIn</div>
-					<a href={'https://linkedin.com/in/samuelmei/'}>
+					<a href={'https://linkedin.com/in/samuelmei/'} className={'linkedin'}>
 						<RiLinkedinLine className={'icons'} />
 					</a>
+					<div className={'names  linkedin_'}>LinkedIn</div>
 				</div>
 			</div>
 		</div>
