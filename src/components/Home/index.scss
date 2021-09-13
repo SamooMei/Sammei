@@ -1,71 +1,72 @@
 .intro {
-	@keyframes title {
-		0% {
-			transform: translate(0, 100%);
-		}
-		100% {
-			transform: translate(0, 0);
-		}
-	}
+  @keyframes title {
+    0% {
+      transform: translate(0, 100%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 
-	@keyframes keys_end {
-    0%, 100% {
+  @keyframes keys_end {
+    0%,
+    100% {
       border-color: transparent;
     }
     50% {
       border-color: white;
     }
-	}
+  }
 
-	@keyframes keys {
-		0% {
-			width: 0;
-		}
-		100% {
-			width: 100%;
-		}
-	}
+  @keyframes keys {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
 
-	width: 100vw;
-	height: 300px;
-	position: absolute;
+  width: 100vw;
+  height: 300px;
+  position: absolute;
 
-	left: 0;
-	right: 0;
-	top: 0;
-	margin: auto;
-	max-width: 100%;
-	max-height: 100%;
-	z-index: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 0;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-	&__container {
-		display: flex;
-		flex-direction: column;
-		overflow: hidden;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
-		align-items: center;
+    align-items: center;
 
-		&__top {
-			display: inline-block;
-			font-size: 20px;
-			animation: title 1s;
-		}
+    &__top {
+      display: inline-block;
+      font-size: 20px;
+      animation: title 1s;
+    }
 
-		&__bottom {
+    &__bottom {
       display: flex;
 
-			&__name {
-				font-family: 'JetBrains', monospace;
-				font-size: 30px;
-				overflow: hidden;
-				white-space: nowrap;
-				animation: keys 1.5s steps(40, end);
-				letter-spacing: 0.15em;
-			}
+      &__name {
+        font-family: "JetBrains", monospace;
+        font-size: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: keys 1.5s steps(40, end);
+        letter-spacing: 0.15em;
+      }
 
       &__trail {
         height: 30px;
@@ -74,6 +75,6 @@
         animation: keys_end 1s infinite;
         animation-delay: 2s;
       }
-		}
-	}
+    }
+  }
 }
