@@ -1,4 +1,7 @@
 .navbar {
+	position: fixed;
+	right: 5px;
+
 	&__switch {
 		display: flex;
 		justify-content: flex-end;
