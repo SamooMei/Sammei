@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 import "./index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <Home />
   </React.StrictMode>,
   document.getElementById("root")
 );
