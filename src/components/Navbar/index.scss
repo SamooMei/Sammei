@@ -1,57 +1,60 @@
 .navbar {
-	position: fixed;
-	right: 10px;
-	z-index: 1;
+  position: fixed;
+  right: 10px;
+  z-index: 1;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	&__switch {
-		display: flex;
-		flex-direction: column;
-		align-self: flex-end;
-	}
+  &__switch {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
 
-	&__content {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-end;
-		justify-content: space-around;
-		height: 200px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 200px;
 
-		&__ref {
-			display: flex;
-			justify-content: space-between;
-			flex-direction: row-reverse;
-			width: 100px;
-			height: 30px;
-		}
-	}
+    &__ref {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100px;
+      height: 30px;
+    }
+  }
 
-	& .names {
-		text-align: center;
-		vertical-align: middle;
-		line-height: 30px;
-		font-size: 18px;
-	}
+  & .names {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 18px;
+  }
 
-	& .icons {
-		font-size: 30px;
-		color: white;
-	}
+  & .icons {
+    font-size: 30px;
+    color: white;
+  }
 
-	& .active {
-		display: none;
-	}
+  & .active {
+    display: none;
+  }
 
-	.home_, .projects_, .github_, .linkedin_ {
-		visibility: hidden;
-	}
+  .home_,
+  .projects_,
+  .github_,
+  .linkedin_ {
+    visibility: hidden;
+  }
 
-	.home:hover + .home_,
-	.projects:hover + .projects_,
-	.github:hover + .github_,
-	.linkedin:hover + .linkedin_ {
-		visibility: visible;
-	} 
+  .home:hover + .home_,
+  .projects:hover + .projects_,
+  .github:hover + .github_,
+  .linkedin:hover + .linkedin_ {
+    visibility: visible;
+  }
 }
