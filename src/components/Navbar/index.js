@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         <div className={"navbar__content__ref"}>
-          <a href={"/Projects"} className={"projects"}>
+          <a href={"/#/projects"} className={"projects"}>
             <RiBriefcase3Line className={"icons"} />
           </a>
           <div className={"names projects_"}>Projects</div>
