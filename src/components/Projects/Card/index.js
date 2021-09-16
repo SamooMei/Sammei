@@ -12,7 +12,7 @@ const Card = ({ project }) => {
 					<RiLinksFill />
 				</a>
 				{project.github !== '' && (
-					<a href={project.link}>
+					<a href={project.github}>
 						<RiGithubLine />
 					</a>
 				)}
