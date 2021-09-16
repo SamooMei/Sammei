@@ -7,7 +7,7 @@
   justify-content: space-between;
 
   width: 320px;
-  max-height: 25vh;
+  max-height: 250px;
 
   margin: 10px;
   border: 1px solid hsl(0, 0%, 100%);
@@ -28,5 +28,9 @@
   &__links {
     display: flex;
     font-size: 30px;
+
+    &__icons {
+      color: white;
+    }
   }
 }

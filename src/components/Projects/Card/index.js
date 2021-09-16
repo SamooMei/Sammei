@@ -9,11 +9,11 @@ const Card = ({ project }) => {
 			<div className={'card__description'}>{project.description}</div>
 			<div className={'card__links'}>
 				<a href={project.link}>
-					<RiLinksFill />
+					<RiLinksFill className={'card__links__icons'} />
 				</a>
 				{project.github !== '' && (
 					<a href={project.github}>
-						<RiGithubLine />
+						<RiGithubLine className={'card__links__icons'}/>
 					</a>
 				)}
 			</div>

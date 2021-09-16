@@ -24,6 +24,7 @@
     border-radius: 20px;
     border: 2px solid white;
     width: 50%;
+    min-height: 31px;
     margin: 20px;
 
     &__bar {
@@ -34,7 +35,10 @@
       font-size: 18px;
       padding-left: 10px;
       background-color: inherit;
-      text-align: center;
+    }
+
+    &__bar::placeholder {
+      color:hsl(0, 0%, 80%);
     }
 
     &__icon {
@@ -49,6 +53,6 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  width: 80vw;
-  height: 80vh;
+  max-width: 80vw;
+  max-height: 80vh;
 }
