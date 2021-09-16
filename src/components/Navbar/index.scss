@@ -47,14 +47,16 @@
   .home_,
   .projects_,
   .github_,
-  .linkedin_ {
+  .linkedin_,
+  .resume_ {
     visibility: hidden;
   }
 
   .home:hover + .home_,
   .projects:hover + .projects_,
   .github:hover + .github_,
-  .linkedin:hover + .linkedin_ {
+  .linkedin:hover + .linkedin_,
+  .resume:hover + .resume_ {
     visibility: visible;
   }
 }
