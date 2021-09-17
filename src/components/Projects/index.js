@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import { BiSearchAlt } from 'react-icons/bi';
 
 import Card from './Card';
 import works from '../../data';
@@ -35,7 +34,6 @@ const Projects = () => {
 						value={search}
 						onChange={handleChange}
 					/>
-					<BiSearchAlt className={'search__icon'} />
 				</div>
 				<div className={'project_container'}>{ mapped }</div>
 			</div>
