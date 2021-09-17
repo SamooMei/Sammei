@@ -35,10 +35,17 @@
       font-size: 18px;
       padding-left: 10px;
       background-color: inherit;
+      text-align: center;
     }
 
     &__bar::placeholder {
       color:hsl(0, 0%, 80%);
+    }
+
+    @media only screen and (max-width: 530px) {
+      &__icon {
+        display: none;
+      }
     }
 
     &__icon {
