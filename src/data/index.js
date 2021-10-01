@@ -1,7 +1,7 @@
 const works = [
 	{
 		name: 'OpenCircuits',
-		description: 'A open source, online digital circuit/logic designer led by Leon Montealgre',
+		description: 'A open source, online digital circuit/logic designer',
 		link: 'https://OpenCircuits.io',
 		github: 'https://github.com/OpenCircuits/OpenCircuits'
 	},
@@ -15,7 +15,7 @@ const works = [
 	{
 		name: 'HASSPathways',
 		description:
-			'Web application led by Bram Van Heuveln that allows students to navigate through their selected HASS pathway courses ',
+			'Web application that allows students to navigate through their selected HASS pathway courses ',
 		link: 'https://hasspathways.netlify.app/',
 		github: '',
 	},
