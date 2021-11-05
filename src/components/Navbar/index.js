@@ -9,7 +9,7 @@ import {
 	RiArrowDownSLine,
 } from 'react-icons/ri';
 
-import pdf from '../../data/Resume.pdf';
+import pdf from '../../data/Samuel_Mei_Resume.pdf';
 import './index.scss';
 
 const Navbar = () => {
